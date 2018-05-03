@@ -1,0 +1,12 @@
+.word-letters span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+    margin: 0 2px; 
+}
+
+.parts p {
+    visibility: hidden;
+}

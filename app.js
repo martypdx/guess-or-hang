@@ -71,7 +71,7 @@ function guess() {
 
             // check for win!
             if(win) {
-                alert('you win!');
+                document.getElementById('message').textContent = 'you win!';
                 document.getElementById('guess-btn').disabled = true;
             }
         }
@@ -79,7 +79,7 @@ function guess() {
             incorrectCount++;
             document.getElementById('part-' + incorrectCount).style.visibility = 'visible';
             if(incorrectCount >= 6) {
-                alert('you lose (and die along the way)!');
+                document.getElementById('message').textContent = 'you lose (and die along the way)!';
                 document.getElementById('guess-btn').disabled = true;
             }
         }

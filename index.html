@@ -33,11 +33,17 @@
     </section>
 
     <section>
-        <label>
-            Letter:
-            <input id="guess" required maxlength="1">
-        </label>
-        <button id="guess-btn" onclick="guess()">Guess</button>
+        <form onsubmit="event.preventDefault(), self.guess()">
+            <label>
+                Letter:
+                <input id="guess" required maxlength="1">
+            </label>
+            <button id="guess-btn">Guess</button>
+        </form>
+    </section>
+
+    <section>
+        <h2 id="message"></h2>
     </section>
 
     <section>

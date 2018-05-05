@@ -1,12 +1,21 @@
+.word-letters {
+    color: white;
+}
+
 .word-letters span {
     display: inline-block;
     width: 20px;
     height: 20px;
     text-align: center;
+    color: white;
     border-bottom: 1px solid #aaa;
     margin: 0 2px; 
 }
 
-.parts p {
+.word-letters span.revealed {
+    color: black;
+}
+
+.hidden {
     visibility: hidden;
 }

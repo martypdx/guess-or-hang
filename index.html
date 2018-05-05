@@ -8,12 +8,12 @@
     <h1>Guess or Hang</h1>
 
     <section class="parts">
-        <p id="part-1">head</p>
-        <p id="part-2">body</p>
-        <p id="part-3">left arm</p>
-        <p id="part-4">right arm</p>
-        <p id="part-5">left leg</p>
-        <p id="part-6">right leg</p>
+        <p class="hidden" id="part-1">head</p>
+        <p class="hidden" id="part-2">body</p>
+        <p class="hidden" id="part-3">left arm</p>
+        <p class="hidden" id="part-4">right arm</p>
+        <p class="hidden" id="part-5">left leg</p>
+        <p class="hidden" id="part-6">right leg</p>
     </section>
 
     <section>
@@ -33,13 +33,11 @@
     </section>
 
     <section>
-        <form onsubmit="event.preventDefault(), self.guess()">
-            <label>
-                Letter:
-                <input id="guess" required maxlength="1">
-            </label>
-            <button id="guess-btn">Guess</button>
-        </form>
+        <label>
+            Letter:
+            <input id="guess" required maxlength="1">
+        </label>
+        <button id="guess-btn" onclick="guess()">Guess</button>
     </section>
 
     <section>
@@ -56,6 +54,7 @@
         <p id="guess-count"></p>
     </section>
     
+    <script src="words.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
